@@ -11,6 +11,7 @@
 		3B21ACF02763E6AF001B6B34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21ACEF2763E6AF001B6B34 /* ContentView.swift */; };
 		3B21ACF22763E6B0001B6B34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B21ACF12763E6B0001B6B34 /* Assets.xcassets */; };
 		3B21ACF52763E6B0001B6B34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B21ACF42763E6B0001B6B34 /* Preview Assets.xcassets */; };
+		3BF86AC427653AB900D1E351 /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF86AC327653AB900D1E351 /* TextEditorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3B21ACEF2763E6AF001B6B34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B21ACF12763E6B0001B6B34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B21ACF42763E6B0001B6B34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BF86AC327653AB900D1E351 /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				3B21ACED2763E6AF001B6B34 /* BookwormApp.swift */,
 				3B21ACEF2763E6AF001B6B34 /* ContentView.swift */,
+				3BF86AC327653AB900D1E351 /* TextEditorView.swift */,
 				3B21ACF12763E6B0001B6B34 /* Assets.xcassets */,
 				3B21ACF32763E6B0001B6B34 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF86AC427653AB900D1E351 /* TextEditorView.swift in Sources */,
 				3B21ACF02763E6AF001B6B34 /* ContentView.swift in Sources */,
 				3B21ACEE2763E6AF001B6B34 /* BookwormApp.swift in Sources */,
 			);
