@@ -4,7 +4,7 @@
 //
 //  Created by Sergey Dolgikh on 16.12.2021.
 //
-
+/*
 import SwiftUI
 
 struct ListStudents: View {
@@ -52,3 +52,4 @@ struct ListStudents_Previews: PreviewProvider {
         ListStudents()
     }
 }
+*/

@@ -8,38 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var rememberMe = false
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var books: FetchedResults<Book>
+    
+    @State private var showingAddScreen = false
     
     var body: some View {
-        VStack {
-            PushButton(title: "Remember Me", isOn: $rememberMe)
-            Text(rememberMe ? "On" : "Off")
+        
+        NavigationView {
+            Text("Count book: \(books.count)")
+                .navigationTitle("Boockworm")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button {
+                            showingAddScreen.toggle()
+                        } label: {
+                            Label("Add", systemImage: "plus")
+                        }
+                        
+                    }
+                }
+                .sheet(isPresented: $showingAddScreen) {
+                    AddBookView()
+                }
+            
         }
-    }
-}
-
-struct PushButton: View {
-    var title: String
-    @Binding var isOn: Bool
-    
-    let onColors = [Color.red, Color.yellow]
-    let ofColors = [Color(white: 0.6), Color(white: 0.4)]
-    
-    var body: some View {
-        Button(title) {
-            isOn.toggle()
-        }
-        .padding()
-        .background {
-            LinearGradient(
-                colors: isOn ? onColors : ofColors,
-                startPoint: .top,
-                endPoint: .bottom
-            )
-        }
-        .foregroundColor(.white)
-        .clipShape(Capsule())
-        .shadow(radius: isOn ? 0 : 5)
     }
 }
 
