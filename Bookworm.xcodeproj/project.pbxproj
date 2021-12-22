@@ -12,6 +12,7 @@
 		3B21ACF02763E6AF001B6B34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21ACEF2763E6AF001B6B34 /* ContentView.swift */; };
 		3B21ACF22763E6B0001B6B34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B21ACF12763E6B0001B6B34 /* Assets.xcassets */; };
 		3B21ACF52763E6B0001B6B34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B21ACF42763E6B0001B6B34 /* Preview Assets.xcassets */; };
+		3B3BB1A32773AF120096DEA3 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3BB1A22773AF120096DEA3 /* RatingView.swift */; };
 		3B482B9A276E83920013353A /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B482B99276E83920013353A /* AddBookView.swift */; };
 		3B639FAB276A74D5003D461D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B639FAA276A74D5003D461D /* DataController.swift */; };
 		3B639FAD276A7921003D461D /* ListStudents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B639FAC276A7921003D461D /* ListStudents.swift */; };
@@ -26,6 +27,7 @@
 		3B21ACEF2763E6AF001B6B34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B21ACF12763E6B0001B6B34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B21ACF42763E6B0001B6B34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B3BB1A22773AF120096DEA3 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		3B482B99276E83920013353A /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		3B639FAA276A74D5003D461D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		3B639FAC276A7921003D461D /* ListStudents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStudents.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				3B21ACEF2763E6AF001B6B34 /* ContentView.swift */,
 				3B01E026276FB6D200491F2A /* PushButton.swift */,
 				3B482B99276E83920013353A /* AddBookView.swift */,
+				3B3BB1A22773AF120096DEA3 /* RatingView.swift */,
 				3B639FAC276A7921003D461D /* ListStudents.swift */,
 				3B639FAA276A74D5003D461D /* DataController.swift */,
 				3BF86AC327653AB900D1E351 /* TextEditorView.swift */,
@@ -158,6 +161,7 @@
 				3B482B9A276E83920013353A /* AddBookView.swift in Sources */,
 				3B639FAB276A74D5003D461D /* DataController.swift in Sources */,
 				3BD37DF9276BCF1300328F86 /* Bookworm.xcdatamodeld in Sources */,
+				3B3BB1A32773AF120096DEA3 /* RatingView.swift in Sources */,
 				3BF86AC427653AB900D1E351 /* TextEditorView.swift in Sources */,
 				3B21ACF02763E6AF001B6B34 /* ContentView.swift in Sources */,
 				3B21ACEE2763E6AF001B6B34 /* BookwormApp.swift in Sources */,
