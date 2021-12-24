@@ -35,13 +35,7 @@ struct AddBookView: View {
                 
                 Section {
                     TextEditor(text: $review)
-                    RatingView(rating: $rating) 
-                    
-//                    Picker("Rating", selection: $rating) {
-//                        ForEach(0..<6) {
-//                            Text(String($0))
-//                        }
-//                    }
+                    RatingView(rating: $rating)
                 } header: {
                     Text("Write a review")
                 }
@@ -55,7 +49,7 @@ struct AddBookView: View {
                         newBook.rating = Int16(rating)
                         newBook.review = review
                         newBook.genre = genre
-                        
+                        try? moc.save()
                         dismiss()
                     }
                 }
