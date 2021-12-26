@@ -37,8 +37,15 @@ struct DetailView: View {
             
             Text(book.review ?? "No review")
                 .padding()
+            
             RatingView(rating: .constant(Int(book.rating)))
                 .font(.largeTitle)
+                .padding()
+            
+            if let timestamp = book.timestamp {
+                Text(timestamp.formatted())
+                    .padding()
+            }
         }
         .alert("Delete book", isPresented: $showingDeleteAlert) {
             Button("Delete", role: .destructive, action: deleteBook)

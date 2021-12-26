@@ -42,20 +42,29 @@ struct AddBookView: View {
                 
                 Section {
                     Button ("Save") {
-                        let newBook = Book(context: moc)
-                        newBook.id = UUID()
-                        newBook.title = title
-                        newBook.author = author
-                        newBook.rating = Int16(rating)
-                        newBook.review = review
-                        newBook.genre = genre
-                        try? moc.save()
+                        addNewBook()
                         dismiss()
                     }
                 }
             }
             .navigationTitle("Add Book")
         }
+    }
+}
+
+extension AddBookView {
+    private func addNewBook() {
+        let newBook = Book(context: moc)
+        newBook.id = UUID()
+        newBook.rating = Int16(rating)
+        newBook.timestamp = Date.now
+        
+        newBook.title = title.isEmpty ? nil : title
+        newBook.author = author.isEmpty ? nil : author
+        newBook.review = review.isEmpty ? nil : review
+        newBook.genre = genre.isEmpty ? nil : genre
+      
+        try? moc.save()
     }
 }
 
